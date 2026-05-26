@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f5f7;
+    color: #1f2937;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.header {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+}
+
+.header h2 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    font-weight: normal;
+    color: #374151;
+}
+
+.header p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.task-btn {
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #111827;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.task-btn:hover {
+    background: #f3f4f6;
+}
+
+.task-btn.active {
+    background: #1f2937;
+    color: #ffffff;
+    border-color: #1f2937;
+}
+
+.task-content {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 24px;
+    min-height: 430px;
+}
+
+.task-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.task-content h3 {
+    margin-top: 22px;
+    font-size: 19px;
+}
+
+.task-content p {
+    font-size: 16px;
+    line-height: 1.55;
+    margin: 9px 0;
+}
+
+.condition {
+    background: #f9fafb;
+    border-left: 4px solid #374151;
+    padding: 12px 14px;
+    margin: 14px 0;
+    border-radius: 6px;
+}
+
+.formula {
+    display: inline-block;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 8px 0;
+}
+
+.answer {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #f9fafb;
+    font-weight: bold;
+}
+
+.visual-block {
+    margin: 18px 0;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.note {
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+}
+
+.table th,
+.table td {
+    border: 1px solid #d1d5db;
+    padding: 9px;
+    text-align: center;
+}
+
+.table th {
+    background: #f3f4f6;
+}
+
+.chart {
+    width: 100%;
+    max-width: 760px;
+    height: 360px;
+    margin: 14px auto;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+}
+
+.axis {
+    stroke: #111827;
+    stroke-width: 2.2;
+}
+
+.grid-line {
+    stroke: #e5e7eb;
+    stroke-width: 1;
+}
+
+.chart-line {
+    fill: none;
+    stroke: #2563eb;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.chart-point {
+    fill: #ffffff;
+    stroke: #2563eb;
+    stroke-width: 4;
+}
+
+.chart-point-inner {
+    fill: #2563eb;
+    stroke: #ffffff;
+    stroke-width: 2;
+}
+
+.step-line {
+    fill: none;
+    stroke: #16a34a;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.step-helper {
+    stroke: #bbf7d0;
+    stroke-width: 2;
+    stroke-dasharray: 5 5;
+}
+
+.chart-point-closed {
+    fill: #16a34a;
+    stroke: #ffffff;
+    stroke-width: 2;
+}
+
+.chart-point-open {
+    fill: #ffffff;
+    stroke: #16a34a;
+    stroke-width: 3;
+}
+
+.label {
+    font-size: 13px;
+    fill: #374151;
+}
+
+.axis-label {
+    font-size: 15px;
+    font-weight: bold;
+    fill: #111827;
+}
+
+.chart-title {
+    font-size: 17px;
+    font-weight: bold;
+    fill: #111827;
+}
+
+@media (max-width: 800px) {
+    .page {
+        padding: 14px;
+    }
+
+    .navigation {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .task-content {
+        padding: 18px;
+    }
+
+    .chart {
+        height: 300px;
+    }
+}
